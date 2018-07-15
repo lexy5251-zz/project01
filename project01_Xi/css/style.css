@@ -1,0 +1,542 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  margin: 0px;
+  font-size: 80%;
+  color: #2d2d2d;
+  font-family: Raleway;
+  font-weight: 300;
+  line-height: 20px;
+}
+
+h1,
+h2 {
+  font-weight: 500;
+  font-family: "Playfair Display";
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+/* Header */
+
+nav {
+  flex-basis: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 4px 0px;
+  justify-content: space-between;
+}
+
+hr {
+  width: 100%;
+}
+
+ul {
+  justify-content: space-evenly;
+  overflow: hidden;
+  padding: 0;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: row;
+  flex-basis: 100%;
+  flex-wrap: wrap;
+}
+
+li {
+  font-weight: 500;
+  flex-basis: 20%;
+  font-size: 12px;
+  list-style: none;
+  text-align: center;
+}
+
+li a {
+  text-decoration: none;
+  color: #e2574c;
+}
+
+li a:hover {
+  color: #b64036;
+}
+
+/* aloha logo and cart icon */
+
+.logo1 {
+  flex-basis: 25%;
+  margin: 3% 0 0 2%;
+  order: 0;
+}
+
+.logo2 {
+  margin: 2% 2% 0 0;
+  flex-basis: 11%;
+}
+
+/** Hero banner elements **/
+/* Main-content in hero banner */
+
+#hero-banner {
+  height: 400px;
+  padding: 50px;
+  background: url(../img/banner-girl.png) center bottom no-repeat,
+    url(../img/flower-bkgd.jpg) left top repeat;
+  background-size: 150px, cover;
+  text-align: center;
+}
+
+.main-content {
+  position: relative;
+  top: 21%;
+}
+
+/* All kinds of setting for element p in main-body */
+
+.collection-p {
+  margin: 4% 8%;
+  font-weight: 500;
+}
+
+.no-margin {
+  margin: 0px 0px 1.5% 0px;
+}
+
+.grey-p {
+  font-weight: 500;
+  font-size: 11px;
+  color: #969696;
+}
+.red-p {
+  color: #e2574c;
+}
+
+.white-p {
+  color: white;
+}
+
+/* About section starts here */
+
+#about {
+  text-align: center;
+  margin-top: 10%;
+}
+
+/* the hand and style classes are for element h1 */
+
+.hand {
+  font-style: italic;
+  display: inline-block;
+  margin-top: 0px;
+}
+
+.style {
+  margin-top: 0px;
+  margin-left: 1%;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.content {
+  font-size: 14px;
+  padding: 0 2% 7% 2%;
+  line-height: 30px;
+  margin-top: 0px;
+}
+
+/* shop section starts here */
+
+#shop {
+  border-style: solid;
+  border-width: 1px 0px;
+  border-color: #d7d7d7;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+}
+
+.box {
+  opacity: 0.8;
+  transition: 0.3s;
+  display: flex;
+  justify-content: center;
+  border: 2px solid white;
+}
+
+.box:hover {
+  opacity: 1;
+}
+
+.shop-men {
+  background-image: url(../img/mens-category.jpg);
+  background-size: cover;
+  flex-basis: 100%;
+}
+
+.shop-trend {
+  flex-basis: 50%;
+  background-image: url(../img/trends-category.jpg);
+  background-size: cover;
+}
+
+.shop-glass {
+  flex-basis: 50%;
+  background-image: url(../img/glasses-category.jpg);
+  background-size: cover;
+}
+
+.shop-sale {
+  flex-basis: 50%;
+  background-image: url(../img/sale-category.jpg);
+  background-size: cover;
+}
+
+.shop-bag {
+  flex-basis: 50%;
+  background-image: url(../img/bags-category.jpg);
+  background-size: cover;
+}
+
+.shop-women {
+  background-image: url(../img/womens-category.jpg);
+  background-size: cover;
+  flex-basis: 100%;
+}
+
+.shop-content {
+  font-weight: 500;
+  padding: 16vw;
+  font-size: 12px;
+}
+
+/* Featured section starts here */
+
+#featured {
+  text-align: center;
+  margin-top: 10%;
+}
+
+.main-cloth {
+  margin-top: 5%;
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.cloth1,
+.cloth2,
+.cloth3,
+.cloth4 {
+  flex-basis: 100%;
+}
+
+.add-cart {
+  display: none;
+}
+
+/* Updates section starts here */
+
+#updates {
+  padding: 16% 2%;
+  background: url(../img/wave-bkgd.jpg) bottom center no-repeat;
+
+  text-align: center;
+}
+
+.email {
+  padding: 0 20%;
+}
+
+/*.sign-content {
+  line-height: 25px;
+  margin-bottom: 10%;
+}
+*/
+form {
+  padding: 2px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: white;
+  border-radius: 30px;
+  border: 1px solid #d7d7d7;
+}
+
+button {
+  font-size: 80%;
+  color: white;
+  border: 0px;
+  border-radius: 20px;
+  background-color: #e2574c;
+  padding: 10px 14px;
+}
+
+#email-content {
+  padding: 10px 0px 10px 10px;
+  color: #969696;
+  font-size: 80%;
+  background-color: transparent;
+  border: 0px;
+}
+
+/* Footer */
+
+footer {
+  text-align: center;
+  padding: 10%;
+  margin-top: 2%;
+  background-color: #242424;
+  font-size: 12px;
+  font-family: "Playfair Display";
+}
+/*
+.footer-p {
+  padding: 3%;
+}*/
+
+#link {
+  display: inline;
+}
+
+.icons .fa {
+  padding: 5px;
+  color: white;
+}
+
+.icon-p {
+  display: none;
+}
+
+/* Responsive design starts here */
+
+@media screen and (min-width: 0px) and (max-width: 320px) {
+  .email {
+    padding: 0px 5%;
+  }
+
+  .shop-content {
+    padding: 13vw;
+  }
+
+  .cloth1,
+  .cloth2,
+  .cloth3,
+  .cloth4 {
+    padding: 0 10%;
+  }
+
+  li {
+    font-size: 100%;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  hr {
+    display: none;
+  }
+
+  ul {
+    order: 1;
+    padding: 4%;
+    flex-basis: 62%;
+    line-height: 0px;
+    margin-left: 0px;
+    margin-top: 1%;
+  }
+
+  .logo1 {
+    flex-basis: 14%;
+    order: 0;
+  }
+
+  .logo2 {
+    order: 2;
+    flex-basis: 8%;
+  }
+
+  .inline-p {
+    letter-spacing: 1px;
+    display: inline;
+    font-size: 30px;
+  }
+
+  .hand {
+    font-size: 30px;
+  }
+
+  .style {
+    font-size: 28px;
+  }
+
+  li {
+    font-size: 14px;
+  }
+
+  .collection-p {
+    font-size: 14px;
+  }
+
+  #about {
+    margin-top: 5%;
+  }
+
+  .content {
+    padding: 0px 20px 30px 20px;
+    font-size: 16px;
+  }
+
+  .shop-men {
+    flex-basis: 50%;
+  }
+
+  .shop-trend {
+    flex-basis: 25%;
+  }
+
+  .shop-glass {
+    flex-basis: 25%;
+  }
+
+  .shop-sale {
+    flex-basis: 25%;
+  }
+  .shop-bag {
+    flex-basis: 25%;
+  }
+
+  .shop-women {
+    flex-basis: 50%;
+  }
+
+  .box {
+    border: 2px solid white;
+  }
+
+  footer {
+    font-size: 14px;
+    padding: 5%;
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+  }
+
+  #updates {
+    padding: 10% 3% 10% 3%;
+  }
+
+  .cloth1,
+  .cloth2,
+  .cloth3,
+  .cloth4 {
+    flex-basis: 50%;
+  }
+
+  .shop-content {
+    font-size: 15px;
+    padding: 8vw 0vw;
+  }
+
+  .email {
+    margin-top: 5%;
+    padding: 0 18%;
+  }
+
+  .footer-p {
+    padding-left: 0px;
+  }
+
+  .icon-p {
+    font-family: Raleway;
+    display: inline-block;
+    padding-left: 6px;
+  }
+
+  .icons .fa {
+    padding: 6px;
+    display: block;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  body {
+    font-size: 18px;
+  }
+  li {
+    font-size: 18px;
+  }
+
+  .logo1 {
+    margin-top: 3%;
+  }
+
+  .logo2 {
+    flex-basis: 6%;
+    margin-top: 3%;
+  }
+
+  ul {
+    margin-top: 2%;
+  }
+
+  #updates {
+    padding-top: 8%;
+  }
+
+  .email {
+    padding: 0 300px;
+  }
+
+  .content {
+    padding: 0 20% 30px 20%;
+  }
+
+  .add-cart {
+    display: inline-block;
+    background-color: black;
+  }
+
+  #featured {
+    margin: 8% 5%;
+  }
+
+  .cloth1,
+  .cloth2,
+  .cloth3,
+  .cloth4 {
+    flex-basis: 25%;
+  }
+
+  .shop-content {
+    padding: 9vw 0vw;
+  }
+
+  .sign-content {
+    padding: 0px 6%;
+  }
+
+  .collection-p {
+    font-size: 18px;
+  }
+
+  .shop-content {
+    font-size: 18px;
+  }
+
+  .red-p {
+    font-size: 20px;
+    line-height: 1em;
+  }
+
+  .grey-p {
+    font-size: 16px;
+  }
+}
