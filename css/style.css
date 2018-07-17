@@ -24,6 +24,7 @@ img {
 }
 
 .container {
+  padding: 0px;
   max-width: 1240px;
   margin: 0 auto;
   overflow: hidden;
@@ -32,10 +33,15 @@ img {
 /* Header */
 
 nav {
+  overflow: hidden;
+  z-index: 1;
+  width: 100%;
+  background-color: white;
+  position: fixed;
   flex-basis: 100%;
   display: flex;
   flex-wrap: wrap;
-  padding: 4px 0px;
+  top: 0;
   justify-content: space-between;
 }
 
@@ -46,7 +52,7 @@ hr {
 ul {
   justify-content: space-evenly;
   overflow: hidden;
-  padding: 0;
+  padding: 5px 0;
   display: flex;
   margin: 0 auto;
   flex-direction: row;
@@ -74,18 +80,22 @@ li a:hover {
 /* aloha logo and cart icon */
 
 .logo1 {
-  flex-basis: 25%;
+  flex-basis: 22%;
   margin: 3% 0 0 2%;
   order: 0;
 }
 
 .logo2 {
   margin: 2% 2% 0 0;
-  flex-basis: 11%;
+  flex-basis: 9%;
 }
 
 /** Hero banner elements **/
 /* Main-content in hero banner */
+
+/*.main-body {
+  padding-top: 90px;
+}*/
 
 #hero-banner {
   height: 400px;
@@ -94,6 +104,7 @@ li a:hover {
     url(../img/flower-bkgd.jpg) left top repeat;
   background-size: 150px, cover;
   text-align: center;
+  margin-top: 21%;
 }
 
 .main-content {
@@ -222,21 +233,21 @@ li a:hover {
 /* Featured section starts here */
 
 #featured {
+  padding-bottom: 12%;
   text-align: center;
   margin-top: 10%;
 }
 
 .main-cloth {
+  width: 100%;
   margin-top: 5%;
-  flex-wrap: wrap;
+  /*  flex-wrap: wrap;
   display: flex;
+*/
 }
 
-.cloth1,
-.cloth2,
-.cloth3,
-.cloth4 {
-  flex-basis: 100%;
+.cloths {
+  width: 100%;
 }
 
 .add-cart {
@@ -326,14 +337,14 @@ footer {
   .shop-content {
     padding: 13vw;
   }
-
+  /*
   .cloth1,
   .cloth2,
   .cloth3,
   .cloth4 {
     padding: 0 10%;
   }
-
+*/
   li {
     font-size: 100%;
   }
@@ -346,11 +357,12 @@ footer {
 
   ul {
     order: 1;
-    padding: 4%;
-    flex-basis: 62%;
+    padding-top: 5%;
+    flex-basis: 52%;
     line-height: 0px;
     margin-left: 0px;
     margin-top: 1%;
+    margin-right: 0px;
   }
 
   .logo1 {
@@ -360,7 +372,11 @@ footer {
 
   .logo2 {
     order: 2;
-    flex-basis: 8%;
+    flex-basis: 7%;
+  }
+
+  #hero-banner {
+    margin-top: 11%;
   }
 
   .inline-p {
@@ -420,6 +436,10 @@ footer {
   .box {
     border: 2px solid white;
   }
+  /*
+  .main-body {
+    padding-top: 80px;
+  }*/
 
   footer {
     font-size: 14px;
@@ -433,11 +453,8 @@ footer {
     padding: 10% 3% 10% 3%;
   }
 
-  .cloth1,
-  .cloth2,
-  .cloth3,
-  .cloth4 {
-    flex-basis: 50%;
+  .cloths {
+    width: 50%;
   }
 
   .shop-content {
@@ -487,9 +504,9 @@ footer {
     margin-top: 2%;
   }
 
-  #updates {
+  /*  #updates {
     padding-top: 8%;
-  }
+  }*/
 
   .email {
     padding: 0 300px;
@@ -505,14 +522,12 @@ footer {
   }
 
   #featured {
-    margin: 8% 5%;
+    padding-bottom: 0px;
+    margin: 8% 11% 10% 11%;
   }
 
-  .cloth1,
-  .cloth2,
-  .cloth3,
-  .cloth4 {
-    flex-basis: 25%;
+  .cloths {
+    width: 25%;
   }
 
   .shop-content {
@@ -538,5 +553,19 @@ footer {
 
   .grey-p {
     font-size: 16px;
+  }
+
+  ul {
+    padding-top: 4%;
+  }
+
+  #updates {
+    padding: 14% 3% 8% 3%;
+  }
+}
+
+@media screen and (min-width: 1240px) {
+  nav {
+    width: 1240px;
   }
 }
